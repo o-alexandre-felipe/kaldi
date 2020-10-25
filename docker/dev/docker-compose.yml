@@ -1,0 +1,11 @@
+# Load the development image and mount the repository
+# to run from this folder use
+# > docker-compose build dev
+# > docker-compose run dev
+version: '3.0'
+services:
+  dev:
+    image: kaldi-development
+    build: .
+    volumes:
+      - ../../:/opt/kaldi
